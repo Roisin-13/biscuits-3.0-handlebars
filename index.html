@@ -8,15 +8,18 @@
     <link href="style.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
         <script id="templateHB" type="text/x-handlebars-template">
+<!------template----------->
+            <div class="page">
         {{#each biscuits}}
         <article class="Recipe">
             <img class="image" src="{{this.imageSrc}}" alt="{{this.name}}" />
-                <!-- <h2 class="name">{{this.name}}</h2> -->
                 <a class="recipe-link" href="{{this.link}}" target="_blank" rel="noopener noreferrer">
                     <h2>{{this.name}}</h2>
                 </a>
         </article>
         {{/each}}
+        </div>
+<!------template----------->
     </script>
 </head>
 
@@ -27,7 +30,7 @@
             &lt;accept cookies&gt;
         </a>
     </header>
-<!---------------------------------->
+<!--------template render here--------->
 <section class="container" id="biscuit-box">
 </section>
 

@@ -4,12 +4,11 @@
     padding: 0;
 }
 
-
-.App {
-  text-align: center;
-  min-height: 100vh;
-  background-color: #F7F2EB;
-  font-family: 'Ubuntu', sans-serif;
+body {
+     text-align: center;
+    min-height: 100vh;
+    background-color: #F7F2EB;
+    font-family: 'Ubuntu', sans-serif; 
 }
 
  .heady {
@@ -20,26 +19,18 @@
   color: #56b3ae;
 } 
 
-/* .page {
+ .page {
   display: flex;
   background-color: white;
-  width: 80%;
+  width: fit-content;
   margin: auto;
-  border: 1px solid #560025;
-}*/
+  align-items: center;
+  border: 5px solid #560025;
+}
 
  .Title-link {
   color: #560025;
 } 
-
-
-.Recipe-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 16.66rem;
-  margin: 2.3rem .5rem 2.3rem .5rem; 
-}
 
 .Recipe {
     display: flex;

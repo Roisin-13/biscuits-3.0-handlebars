@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biscuits</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+        <script id="templateHB" type="text/x-handlebars-template">
+        {{#each biscuits}}
+        <article class="Recipe">
+            <img class="image" src="{{this.imageSrc}}" alt="{{this.name}}" />
+                <!-- <h2 class="name">{{this.name}}</h2> -->
+                <a class="recipe-link" href="{{this.link}}" target="_blank" rel="noopener noreferrer">
+                    <h2>{{this.name}}</h2>
+                </a>
+        </article>
+        {{/each}}
+    </script>
+</head>
+
+<body>
+    <header class="heady">
+        <p>Gonna make some biscuits</p>
+        <a class="Title-link" href="https://www.acceptcookies.uk/index.html" target="_blank" rel="noopener noreferrer">
+            &lt;accept cookies&gt;
+        </a>
+    </header>
+<!---------------------------------->
+<section class="container" id="biscuit-box">
+</section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
